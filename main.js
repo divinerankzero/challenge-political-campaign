@@ -1,27 +1,71 @@
-// Your job is to define the different objects and arrays, 
-// their structure, and the corresponding properties for each, 
-// to represent the following information about Elizabeth's campaign.
+const elizabeth = {
+    congressionalDistrict: "5th Congressional district of Tennessee",
+    platform: {
+        taxes: "",
+        jobs: "",
+        infrastructure: "",
+        healthCare: "",
+        crimeAndEnforcement: "",
+    },
+    donationURL: 'elizabethsanger.com/donate',
+    calendarOfEvents: 'elizabethsanger.com/calendar',
+    volunteers: [
+        {
+            fname: "Laurie",
+            lname: "Lovette",
+            email: "llovette@yahoo.com",
+            phone: "601-430-5117",
+            availability: 
+            {
+                sun: 'none',
+                monday: 'none',
+                tuesday: 'none',
+                weds: 'evenings',
+                thurs: 'mornings',
+                fri: 'evenings',
+                sat: 'mornings'
+            },
+            activitiesWillingToPerform: 
+            {
+                answeringCalls: true,
+                takingPolls: false,
+                goingDoorToDoor: false
+            },
 
-// Her congressional district (you can use yours here)
-// Her platform statements for the following issues.
-// Taxes
-// Jobs
-// Infrastructure
-// Health care
-// Crime and enforcement
-// URL for donation form
-// Calendar of events
-// Volunteer information
-// Name
-// Address
-// Email
-// Phone number
-// Availability
-// What activities each one is willing to do (e.g. answering phone calls, taking polls, etc.)
-// Biography
-// Image gallery
-// Head shot
-// Picture of family
-// Picture of constituents
-// Mission statement
-// URL for registering to vote
+        },
+        {
+            fname: "Brad",
+            lname: "Stone",
+            email: "bradstone@yahoo.com",
+            phone: "215-960-6488",
+            availability: 
+            {
+                sun: 'evenings',
+                monday: 'none',
+                tuesday: 'none',
+                weds: 'evenings',
+                thurs: 'mornings',
+                fri: 'evenings',
+                sat: 'mornings'
+            },
+            activitiesWillingToPerform: 
+            {
+                answeringCalls: true,
+                takingPolls: true,
+                goingDoorToDoor: true
+            },
+
+        }
+    ],
+    biography: "Paragraphs of text",
+    images: {
+        headShot: './images/headshot.jpg',
+        family: './images/family.jpg',
+        constituents: './images/constituents.jpg'
+
+    },
+    missionStatement: "Paragraphs of text",
+    registrationURL: "elizabethsanger.com/register"
+}
+
+console.table(elizabeth.volunteers);
